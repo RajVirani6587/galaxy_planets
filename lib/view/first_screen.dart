@@ -57,7 +57,7 @@ class _Galaxy_Planets_ScreenState extends State<Galaxy_Planets_Screen> with Sing
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Padding(
-                                padding:  EdgeInsets.only(top: 15,right: 40),
+                                padding: EdgeInsets.only(top: 15,right: 40),
                                 child: Text("${galaxy_controller.l1.value[index].Name}",style: TextStyle(color: Colors.white,fontSize: 25),),
                               ),
                             ],
@@ -81,7 +81,7 @@ class _Galaxy_Planets_ScreenState extends State<Galaxy_Planets_Screen> with Sing
                               SizedBox(width: 15,),
                               Text("🔁 ${galaxy_controller.l1.value[index].MS}",style: TextStyle(color: Colors.grey)),
                             ],
-                          )
+                          ),
                         ],
                       ),
                       margin: EdgeInsets.all(30),
@@ -92,8 +92,7 @@ class _Galaxy_Planets_ScreenState extends State<Galaxy_Planets_Screen> with Sing
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    Container(margin: EdgeInsets.only(right: 20),
-                        child: AnimatedBuilder(
+                    AnimatedBuilder(
                             animation: _animationController!,
                             builder: (context,v1){
                               return Transform.rotate(
@@ -101,7 +100,7 @@ class _Galaxy_Planets_ScreenState extends State<Galaxy_Planets_Screen> with Sing
                                 child:v1,
                               );
                             },
-                            child: Image.asset("${galaxy_controller.l1.value[index].Image}",width: 80,height: 80,fit: BoxFit.fill,))),
+                            child: Image.asset("${galaxy_controller.l1.value[index].Image}",width: 80,height: 80,fit: BoxFit.fill,)),
                   ],
                 ),
               ],

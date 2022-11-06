@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:galaxy_planets/view/first_screen.dart';
 import 'package:galaxy_planets/view/secode_screen.dart';
+import 'package:galaxy_planets/view/sppleace_Screen.dart';
 import 'package:get/get.dart';
 
 void main(){
@@ -8,7 +9,8 @@ void main(){
       GetMaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          '/':(context)=> Galaxy_Planets_Screen(),
+          '/':(context)=>splesh_Screen(),
+          'galaxy':(context)=> Galaxy_Planets_Screen(),
           'planets':(context)=>PlanetsDetlis_Screen(),
 
         },
